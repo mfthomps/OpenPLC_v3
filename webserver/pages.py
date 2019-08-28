@@ -593,7 +593,7 @@ dashboard_tail = """
                     <br>
                     <h2>Runtime Logs</h2>
                     <textarea wrap='off' spellcheck='false' id='mytextarea'>
-loading logs...
+Log loading disabled
                     </textarea>
                     <div class='tooltip' style='margin: 5px 0px 0px 0px'>
                         <button class='button' style='height:45px; padding-top:10px' onclick='copyClipboard()' onmouseout='outFunc()'><span class='tooltiptext' id='myTooltip'>Copy to clipboard</span>Copy logs</button>
@@ -627,6 +627,7 @@ loading logs...
         
         function loadData()
         {
+            return;
             url = 'runtime_logs'
             try
             {
